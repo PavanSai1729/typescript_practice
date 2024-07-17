@@ -14,7 +14,6 @@ app.use((req,res,next)=>{
 })
 
 sequelize
-// .sync({force: true})
 .sync()
 .then((result) => {
     const hostname = '127.0.0.1';
